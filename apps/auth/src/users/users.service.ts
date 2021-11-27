@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { User } from '../interface/users';
+import { User } from 'apps/auth/src/interface/users';
 
 @Injectable()
 export class UsersService {
@@ -14,7 +14,7 @@ export class UsersService {
       username: 'hyeok jun',
       password: 'abcd1234',
     },
-  ]
+  ];
 
   public findAll(): User[] {
     return this.users;

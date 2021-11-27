@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@interface/": ["src/interface/*"]
+      "@auth/*": ["./apps/auth/src/*"],
+      "@order/*": ["./apps/order/src/*"]
     }
-  },
+  }
 }
